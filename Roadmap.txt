@@ -7,14 +7,14 @@
 │   │   ├── chat.css                 # Kiểu dáng cho giao diện người dùng
 │   │   ├── chat.js                  # Logic giao diện (xử lý tin nhắn, hiển thị)
 │   │   └── /assets                  # Ảnh, icon, và các file tĩnh khác
-│   └── package.json                 # Các thư viện JavaScript (nếu sử dụng framework)
+│   └── package.json                 # Các thư viện JavaScript (React, Vue hoặc khác)
 │
 ├── /backend
-│   ├── app.py                       # API back-end (Flask/Django) xử lý các kết nối
-│   ├── routes.py                    # Các tuyến đường API (gửi/nhận tin nhắn, kết nối P2P)
+│   ├── app.py                       # API back-end (Flask/Django) xử lý kết nối và tin nhắn
+│   ├── routes.py                    # Các tuyến đường API cho gửi/nhận tin nhắn và kết nối P2P
 │   ├── auth.py                      # Xác thực người dùng (JWT/OAuth2)
-│   ├── WebSocketManager.py          # Quản lý các kết nối qua WebSocket
-│   ├── /db                          # Thư mục chứa database và các tệp liên quan
+│   ├── WebSocketManager.py          # Quản lý kết nối qua WebSocket
+│   ├── /db                          # Thư mục chứa database và tệp liên quan
 │   └── requirements.txt             # Các gói thư viện cần thiết cho back-end (Python)
 │
 ├── /p2p-connection
@@ -24,7 +24,7 @@
 │
 ├── /security
 │   ├── authMiddleware.js            # Xác thực phiên đăng nhập
-│   ├── encryption.js                # Bảo mật dữ liệu và mã hóa
+│   ├── encryption.js                # Bảo mật và mã hóa dữ liệu
 │   └── ssl_certificate.pem          # Chứng chỉ SSL để bảo mật kết nối
 │
 ├── /testing
@@ -35,83 +35,79 @@
 │
 ├── /deployment
 │   ├── Dockerfile                   # Cấu hình Docker để triển khai ứng dụng
-│   ├── docker-compose.yml           # Tích hợp các thành phần ứng dụng trong Docker
+│   ├── docker-compose.yml           # Tích hợp các thành phần trong Docker
 │   └── heroku.yml                   # Triển khai lên Heroku
 │
 └── README.md                        # Mô tả dự án và hướng dẫn cài đặt
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Phân công nhiệm vụ cho 6 thành viên:
+
+Back-end Development 
+Nhiệm vụ: Xây dựng API và chức năng back-end trong thư mục /backend.
+Yêu cầu: Hoàn thành API cho việc xử lý tin nhắn, kết nối WebSocket và lưu trữ tin nhắn.
+Công cụ: Flask/Django, WebSocket.
+
+Bảo mật & Xác thực 
+Nhiệm vụ: Xác thực người dùng, bảo mật dữ liệu và kết nối trong thư mục /security.
+Yêu cầu: Tạo hệ thống xác thực người dùng (JWT hoặc OAuth2) và bảo mật kết nối qua SSL/TLS.
+Công cụ: JWT, OAuth2, HTTPS.
+
+Kết nối P2P 
+Nhiệm vụ: Xử lý kết nối P2P trong thư mục /p2p-connection.
+Yêu cầu: Xây dựng WebRTC để kết nối và truyền dữ liệu giữa các người dùng.
+Công cụ: WebRTC, signaling.
+
+Front-end Development 
+Nhiệm vụ: Thiết kế giao diện người dùng trong thư mục /frontend.
+Yêu cầu: Hoàn thành giao diện chat, kết hợp với API và WebRTC để gửi/nhận tin nhắn.
+Công cụ: HTML, CSS, JavaScript, React hoặc Vue.
+
+Kiểm thử 
+Nhiệm vụ: Kiểm thử toàn bộ hệ thống trong thư mục /testing.
+Yêu cầu: Xây dựng các bài kiểm thử đơn vị và tích hợp để đảm bảo hoạt động đúng.
+Công cụ: Jest, Selenium, hoặc các công cụ kiểm thử khác.
+
+Triển khai 
+Nhiệm vụ: Triển khai ứng dụng lên môi trường trực tuyến trong thư mục /deployment.
+Yêu cầu: Cấu hình Docker, Heroku và kiểm tra sau khi triển khai.
+Công cụ: Docker, Heroku.
+
+
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Mỗi thành viên sẽ được giao phụ trách một phần:
 
-Front-end (Giao diện người dùng):
-Thiết kế giao diện web, nơi người dùng sẽ chat và gửi dữ liệu.
-Công cụ: Sử dụng HTML, CSS, JavaScript và có thể dùng framework như React hay Vue để làm cho giao diện trực quan hơn.
-Yêu cầu: Xây dựng trang chat với giao diện gồm cửa sổ chat, ô nhập tin nhắn, và khu vực để tải hoặc gửi dữ liệu.
+Thứ tự hoàn thành:
+1. Back-end Development
+Cung cấp API cho Bảo mật, Kết nối P2P, và Front-end
 
-Back-end (Máy chủ quản lý kết nối P2P):
-Chịu trách nhiệm về phần back-end của hệ thống, nơi kết nối các người dùng với nhau và quản lý các yêu cầu truyền dữ liệu.
-Công cụ: Sử dụng Node.js hoặc Python (với Flask hay Django) để xây dựng API giúp quản lý kết nối giữa các máy khách.
-Yêu cầu: Xây dựng chức năng để người dùng gửi tin nhắn và dữ liệu thông qua kết nối trực tiếp P2P.
+2. Bảo mật & Xác thực
+Bảo vệ các endpoint của Back-end và hỗ trợ Kết nối P2P.
 
-Quản lý phiên người dùng và bảo mật:
-Xây dựng hệ thống quản lý danh tính người dùng và bảo mật cho các kết nối P2P.
-Công cụ: JWT (JSON Web Token) hoặc OAuth2 để xác thực người dùng. Sử dụng HTTPS để bảo mật các dữ liệu truyền qua mạng.
-Yêu cầu: Đảm bảo chỉ những người dùng đã đăng nhập mới có thể chat, và mọi kết nối giữa các máy đều được bảo mật.
+3. Kết nối P2P
+Sử dụng API của Back-end và yêu cầu xác thực từ Bảo mật.
 
-Xử lý kết nối P2P và giao tiếp trực tiếp:
-Pphụ trách xây dựng phần logic để kết nối trực tiếp các người dùng với nhau. Công nghệ WebRTC có thể được sử dụng để tạo ra các kết nối P2P.
-Công cụ: Sử dụng WebRTC cho việc gửi dữ liệu và tin nhắn trực tiếp giữa người dùng, không qua máy chủ trung gian.
-Yêu cầu: Xây dựng hệ thống để người dùng có thể truyền dữ liệu và chat trực tiếp với nhau.
+4. Front-end Development
+Gọi API từ Back-end và tích hợp với Kết nối P2P.
 
-Kiểm thử và triển khai:
-Đảm nhận việc kiểm thử toàn bộ hệ thống, tìm lỗi và triển khai ứng dụng lên môi trường trực tuyến.
-Công cụ: Sử dụng các công cụ kiểm thử (như Jest, Selenium) để đảm bảo ứng dụng hoạt động đúng cách. Triển khai ứng dụng trên dịch vụ đám mây như Heroku hoặc AWS.
-Yêu cầu: Đảm bảo ứng dụng hoạt động ổn định và có thể truy cập được qua mạng.
+5. Kiểm thử
+Kiểm tra tất cả các phần đã hoàn thiện và tích hợp.
 
+6. Triển khai
+Đưa ứng dụng vào hoạt động dựa trên sự ổn định của các phần đã được kiểm thử.
 
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-Thứ tự hoàn thành công việc:
-
-1.Back-end:
-Nhiệm vụ: Xây dựng API và các chức năng back-end (thư mục /backend).
-Lý do ưu tiên: Back-end là nơi lưu trữ dữ liệu và quản lý logic xử lý chính. Cần triển khai trước để các thành viên khác như front-end, P2P connection, và bảo mật có thể sử dụng API và các chức năng đã xây dựng.
-Hoàn thành: Cơ bản API xử lý tin nhắn, kết nối WebSocket, lưu trữ dữ liệu tin nhắn.
-
-2.Bảo mật & Xác thực:
-Nhiệm vụ: Xác thực người dùng và bảo mật dữ liệu (thư mục /security).
-Lý do: Các kết nối và giao tiếp trong ứng dụng phải được bảo mật từ đầu. Thành viên này sẽ phát triển hệ thống đăng nhập, xác thực người dùng (JWT hoặc OAuth), và bảo mật kết nối qua SSL/TLS.
-Hoàn thành: Sau khi API cơ bản hoàn thành, thêm bảo mật vào các endpoint API và quản lý phiên đăng nhập.
-
-3.Kết nối P2):
-Nhiệm vụ: Xử lý kết nối P2P (thư mục /p2p-connection).
-Lý do: Các chức năng kết nối P2P cần có sự phối hợp với API của back-end để lấy dữ liệu từ máy chủ, sau đó chuyển giao tiếp trực tiếp giữa các người dùng.
-Hoàn thành: Sau khi back-end và bảo mật hoàn thiện, xây dựng kết nối WebRTC để trao đổi dữ liệu giữa các peer, kết hợp với back-end để quản lý tín hiệu kết nối.
-
-4.Front-end:
-Nhiệm vụ: Thiết kế và phát triển giao diện người dùng (thư mục /frontend).
-Lý do: Front-end phụ thuộc vào API của back-end và các chức năng kết nối P2P để gửi/nhận tin nhắn và dữ liệu. Thành viên này có thể bắt đầu phần giao diện cơ bản ngay, nhưng cần đợi các API từ back-end hoàn thành để tích hợp các chức năng.
-Hoàn thành: Xây dựng giao diện người dùng, kết nối front-end với API và P2P để hoàn thiện chức năng gửi/nhận tin nhắn.
-
-5.Kiểm thử & Triển khai:
-Nhiệm vụ: Kiểm thử và triển khai (thư mục /testing và /deployment).
-Lý do: Kiểm thử cần thực hiện sau khi các phần khác hoàn thành từng phần, để đảm bảo các chức năng hoạt động đúng và không có lỗi bảo mật hay kết nối. Triển khai lên môi trường thực tế (Docker/Heroku) sau khi mọi thứ đã được kiểm thử kỹ lưỡng.
-Hoàn thành: Xây dựng các bài kiểm thử đơn vị và tích hợp. Cuối cùng, cấu hình triển khai hệ thống lên đám mây.
 
 Tóm tắt thứ tự:
-Back-end
-Bảo mật & Xác thực
-Kết nối P2P
-Front-end
-Kiểm thử & Triển khai
+1. Back-end
+2. Bảo mật & Xác thực
+3. Kết nối P2P
+4. Front-end
+5. Kiểm thử 
+6. Triển khai
 
 
 
