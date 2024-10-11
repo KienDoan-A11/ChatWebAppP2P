@@ -48,7 +48,6 @@
 Mỗi thành viên sẽ được giao phụ trách một phần:
 
 Front-end (Giao diện người dùng):
-
 Thành viên 1 thiết kế giao diện web, nơi người dùng sẽ chat và gửi dữ liệu.
 Công cụ: Sử dụng HTML, CSS, JavaScript và có thể dùng framework như React hay Vue để làm cho giao diện trực quan hơn.
 Yêu cầu: Xây dựng trang chat với giao diện gồm cửa sổ chat, ô nhập tin nhắn, và khu vực để tải hoặc gửi dữ liệu.
