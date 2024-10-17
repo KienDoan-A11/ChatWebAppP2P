@@ -14,7 +14,6 @@
 │   ├── routes.py                    # Các tuyến đường API cho gửi/nhận tin nhắn và kết nối P2P
 │   ├── auth.py                      # Xác thực người dùng (JWT/OAuth2)
 │   ├── WebSocketManager.py          # Quản lý kết nối qua WebSocket
-│   ├── /db                          # Thư mục chứa database và tệp liên quan
 │   └── requirements.txt             # Các gói thư viện cần thiết cho back-end (Python)
 │
 ├── /p2p-connection
