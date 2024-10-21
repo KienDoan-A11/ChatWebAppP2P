@@ -32,24 +32,20 @@ Cuối cùng, cần kiểm thử để đảm bảo ứng dụng không có lỗ
 
 
 # Distributed Computing (tính toán phân tán) 
-là mô hình tính toán trong đó các thành phần phần mềm và phần cứng phân tán trên nhiều máy tính khác nhau phối hợp với nhau để thực hiện các tác vụ. Hệ thống này có thể phân phối khối lượng công việc qua nhiều máy, làm tăng khả năng xử lý và hiệu suất. là một phương thức tính toán phân tán, trong đó nhiều người dùng đóng góp tài nguyên của họ như sức mạnh xử lý, dung lượng lưu trữ, hoặc băng thông để thực hiện các nhiệm vụ tính toán lớn mà một hệ thống đơn lẻ không thể xử lý được. Tài nguyên đóng góp từ nhiều máy tính cá nhân hay máy chủ phân tán được tập hợp lại để giải quyết các vấn đề tính toán phức tạp hoặc xử lý lượng dữ liệu lớn. Những dự án nổi tiếng như SETI@home hay Folding@home là các ví dụ về contributed computing.
+Distributed Computing (tính toán phân tán) là mô hình tính toán trong đó các thành phần phần mềm và phần cứng phân tán trên nhiều máy tính khác nhau phối hợp với nhau để thực hiện các tác vụ. Hệ thống này có thể phân phối khối lượng công việc qua nhiều máy, làm tăng khả năng xử lý và hiệu suất.
+
+Đặc điểm chính của Distributed Computing:
+Phân tán: Công việc được chia nhỏ và thực hiện bởi nhiều máy tính khác nhau, có thể ở nhiều vị trí địa lý khác nhau.
+Tính song song: Các tác vụ có thể được xử lý đồng thời, giúp tăng tốc độ xử lý.
+Khả năng mở rộng: Dễ dàng thêm nhiều máy tính hơn để nâng cao hiệu suất.
 
 # Tầm quan trọng của P2P trong Distributed Computing
-Mô hình P2P (Peer-to-Peer) đóng vai trò quan trọng trong contributed computing bởi vì:
+Mô Ứng dụng của mạng P2P vào Distributed Computing:
+Mạng P2P là một cơ chế phù hợp cho Distributed Computing, đặc biệt trong việc chia sẻ tài nguyên và phân tán công việc trên nhiều thiết bị. Dưới đây là một số cách mà P2P có thể hỗ trợ tính toán phân tán:
 
-Phân phối tài nguyên: Trong mô hình P2P, không có máy chủ trung tâm. Mỗi "peer" (máy tính tham gia) vừa có thể là người dùng vừa có thể là người cung cấp tài nguyên. Điều này giúp giảm gánh nặng lên máy chủ trung tâm và tối ưu hóa sử dụng tài nguyên.
-
-Mở rộng quy mô dễ dàng: Khi nhiều thiết bị tham gia vào mạng P2P, sức mạnh tính toán và lưu trữ của hệ thống được tăng cường một cách dễ dàng mà không cần tăng cường cơ sở hạ tầng tập trung. Điều này rất quan trọng trong những hệ thống cần mở rộng nhanh chóng khi lượng công việc tăng cao.
-
-Khả năng phục hồi cao: Do không có điểm trung tâm (central point of failure), mạng P2P có khả năng phục hồi tốt hơn trước các sự cố. Nếu một node bị hỏng hoặc bị mất kết nối, các node khác trong mạng vẫn tiếp tục hoạt động mà không ảnh hưởng đến hệ thống tổng thể.
-
-Hiệu quả kinh tế: Thay vì cần các trung tâm dữ liệu lớn và tốn kém, contributed computing với mô hình P2P tận dụng tài nguyên của những máy tính có sẵn, giúp tiết kiệm chi phí triển khai hệ thống.
-
-Ứng dụng trong chia sẻ dữ liệu: Mạng P2P không chỉ dùng cho tính toán mà còn hỗ trợ tốt cho việc chia sẻ dữ liệu trong các mạng phân tán, vì dữ liệu được phân phối trên nhiều node, giúp tăng tốc độ truyền tải và tính khả dụng.
-
-P2P giúp cho mô hình contributed computing có khả năng mở rộng lớn hơn, mạnh mẽ hơn, và linh hoạt hơn trong việc tận dụng tài nguyên của các cá nhân hoặc tổ chức tham gia vào hệ thống.
-
-
+Chia sẻ tài nguyên: Trong mạng P2P, các thiết bị có thể chia sẻ tài nguyên như dung lượng lưu trữ, sức mạnh xử lý, hoặc dữ liệu. Điều này tương thích với mô hình Distributed Computing, nơi nhiều thiết bị đóng góp tài nguyên để xử lý các tác vụ lớn.
+Phân tán khối lượng công việc: P2P có thể phân tán khối lượng công việc và dữ liệu trên nhiều thiết bị khác nhau, giảm áp lực lên một máy chủ duy nhất. Điều này giúp tăng tính linh hoạt và mở rộng của hệ thống tính toán phân tán.
+Tính chịu lỗi cao: Mạng P2P có khả năng phục hồi tốt hơn nếu một số node (thiết bị) bị hỏng, do khối lượng công việc có thể được chuyển sang các peer khác. Điều này tăng độ tin cậy của hệ thống tính toán phân tán.
 
 
 
