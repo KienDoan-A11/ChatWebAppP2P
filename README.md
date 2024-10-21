@@ -22,9 +22,11 @@ Vai trò trong dự án: Thành viên này sẽ đảm bảo rằng ứng dụng
 
 Tổng kết dự án:
 Xây dựng một ứng dụng web giúp mọi người có thể trò chuyện và chia sẻ dữ liệu với nhau.
+
 Ứng dụng này có ba phần chính: bộ não (back-end) để xử lý dữ liệu, giao diện (front-end) mà người dùng thấy, và kết nối P2P giúp người dùng gửi dữ liệu trực tiếp cho nhau.
+
 Để ứng dụng an toàn, cần bảo mật & xác thực để chỉ cho phép người đã đăng nhập được sử dụng.
-Cuối cùng, cần kiểm thử để đảm bảo ứng dụng không có lỗi trước khi đưa nó lên mạng chot mọi người dùng.
+
 
 
 
