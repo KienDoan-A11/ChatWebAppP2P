@@ -31,10 +31,10 @@ Cuối cùng, cần kiểm thử để đảm bảo ứng dụng không có lỗ
 
 
 
-# Contributed computing là gì?
-Contributed computing là một phương thức tính toán phân tán, trong đó nhiều người dùng đóng góp tài nguyên của họ như sức mạnh xử lý, dung lượng lưu trữ, hoặc băng thông để thực hiện các nhiệm vụ tính toán lớn mà một hệ thống đơn lẻ không thể xử lý được. Tài nguyên đóng góp từ nhiều máy tính cá nhân hay máy chủ phân tán được tập hợp lại để giải quyết các vấn đề tính toán phức tạp hoặc xử lý lượng dữ liệu lớn. Những dự án nổi tiếng như SETI@home hay Folding@home là các ví dụ về contributed computing.
+# Distributed Computing (tính toán phân tán) 
+là mô hình tính toán trong đó các thành phần phần mềm và phần cứng phân tán trên nhiều máy tính khác nhau phối hợp với nhau để thực hiện các tác vụ. Hệ thống này có thể phân phối khối lượng công việc qua nhiều máy, làm tăng khả năng xử lý và hiệu suất. là một phương thức tính toán phân tán, trong đó nhiều người dùng đóng góp tài nguyên của họ như sức mạnh xử lý, dung lượng lưu trữ, hoặc băng thông để thực hiện các nhiệm vụ tính toán lớn mà một hệ thống đơn lẻ không thể xử lý được. Tài nguyên đóng góp từ nhiều máy tính cá nhân hay máy chủ phân tán được tập hợp lại để giải quyết các vấn đề tính toán phức tạp hoặc xử lý lượng dữ liệu lớn. Những dự án nổi tiếng như SETI@home hay Folding@home là các ví dụ về contributed computing.
 
-# Tầm quan trọng của P2P trong Contributed Computing
+# Tầm quan trọng của P2P trong Distributed Computing
 Mô hình P2P (Peer-to-Peer) đóng vai trò quan trọng trong contributed computing bởi vì:
 
 Phân phối tài nguyên: Trong mô hình P2P, không có máy chủ trung tâm. Mỗi "peer" (máy tính tham gia) vừa có thể là người dùng vừa có thể là người cung cấp tài nguyên. Điều này giúp giảm gánh nặng lên máy chủ trung tâm và tối ưu hóa sử dụng tài nguyên.
