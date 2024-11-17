@@ -1,0 +1,363 @@
+2024-11-16 20:50:46,401 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.105:5000
+2024-11-16 20:50:46,401 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 20:51:13,910 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.105:5000
+2024-11-16 20:51:13,910 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 20:52:39,692 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-16 20:52:39,692 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 20:52:39,692 - INFO -  * Restarting with stat
+2024-11-16 20:52:40,725 - WARNING -  * Debugger is active!
+2024-11-16 20:52:40,728 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 20:53:32,510 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\app.py', reloading
+2024-11-16 20:53:32,575 - INFO -  * Restarting with stat
+2024-11-16 20:54:30,886 - ERROR - Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-16 20:54:30,888 - INFO - 127.0.0.1 - - [16/Nov/2024 20:54:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-11-16 21:26:51,472 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.105:5000
+2024-11-16 21:26:51,472 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 21:27:13,278 - ERROR - Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-16 21:27:13,279 - INFO - 127.0.0.1 - - [16/Nov/2024 21:27:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-11-16 21:29:40,560 - INFO - 127.0.0.1 - - [16/Nov/2024 21:29:40] "GET /socket.io/?EIO=4&transport=polling&t=9l2jcylb HTTP/1.1" 200 -
+2024-11-16 21:29:40,808 - INFO - 127.0.0.1 - - [16/Nov/2024 21:29:40] "POST /socket.io/?EIO=4&transport=polling&t=9l2s763r&sid=pQTk_avDJVQWJH1eAAAA HTTP/1.1" 200 -
+2024-11-16 21:29:40,874 - INFO - 127.0.0.1 - - [16/Nov/2024 21:29:40] "GET /socket.io/?EIO=4&transport=polling&t=9l2s8qob&sid=pQTk_avDJVQWJH1eAAAA HTTP/1.1" 200 -
+2024-11-16 21:29:40,883 - INFO - 127.0.0.1 - - [16/Nov/2024 21:29:40] "POST /socket.io/?EIO=4&transport=polling&t=9l30vt1m&sid=pQTk_avDJVQWJH1eAAAA HTTP/1.1" 200 -
+2024-11-16 21:29:41,184 - INFO - 127.0.0.1 - - [16/Nov/2024 21:29:41] "GET /socket.io/?EIO=4&transport=polling&t=9l30uuei&sid=pQTk_avDJVQWJH1eAAAA HTTP/1.1" 200 -
+2024-11-16 21:31:59,596 - INFO - 127.0.0.1 - - [16/Nov/2024 21:31:59] "GET /socket.io/?EIO=4&transport=websocket&sid=pQTk_avDJVQWJH1eAAAA HTTP/1.1" 200 -
+2024-11-16 21:32:15,833 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:15] "GET /socket.io/?EIO=4&transport=polling&t=9oekjvhz HTTP/1.1" 200 -
+2024-11-16 21:32:15,848 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:15] "POST /socket.io/?EIO=4&transport=polling&t=9oela6ew&sid=zEmY31q6SR1Rw8uoAAAC HTTP/1.1" 200 -
+2024-11-16 21:32:15,850 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:15] "GET /socket.io/?EIO=4&transport=polling&t=9oelffbd&sid=zEmY31q6SR1Rw8uoAAAC HTTP/1.1" 200 -
+2024-11-16 21:32:15,859 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:15] "GET /socket.io/?EIO=4&transport=polling&t=9oelsaxz&sid=zEmY31q6SR1Rw8uoAAAC HTTP/1.1" 200 -
+2024-11-16 21:32:16,520 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:16] "GET /socket.io/?EIO=4&transport=polling&t=9oevpvxk HTTP/1.1" 200 -
+2024-11-16 21:32:16,772 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:16] "POST /socket.io/?EIO=4&transport=polling&t=9of4crjb&sid=ycUki7ZHoAQNMi8pAAAE HTTP/1.1" 200 -
+2024-11-16 21:32:16,835 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:16] "GET /socket.io/?EIO=4&transport=polling&t=9of4ecsl&sid=ycUki7ZHoAQNMi8pAAAE HTTP/1.1" 200 -
+2024-11-16 21:32:16,842 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:16] "GET /socket.io/?EIO=4&transport=polling&t=9ofd26v5&sid=ycUki7ZHoAQNMi8pAAAE HTTP/1.1" 200 -
+2024-11-16 21:32:17,147 - INFO - 127.0.0.1 - - [16/Nov/2024 21:32:17] "POST /socket.io/?EIO=4&transport=polling&t=9ofd3ffm&sid=ycUki7ZHoAQNMi8pAAAE HTTP/1.1" 200 -
+2024-11-16 21:36:09,380 - INFO - 127.0.0.1 - - [16/Nov/2024 21:36:09] "GET /socket.io/?EIO=4&transport=polling&t=9tek00st HTTP/1.1" 200 -
+2024-11-16 21:36:09,631 - INFO - 127.0.0.1 - - [16/Nov/2024 21:36:09] "POST /socket.io/?EIO=4&transport=polling&t=9tesoaat&sid=J15bYYymSTKnwodSAAAG HTTP/1.1" 200 -
+2024-11-16 21:36:09,693 - INFO - 127.0.0.1 - - [16/Nov/2024 21:36:09] "GET /socket.io/?EIO=4&transport=polling&t=9tesp0uo&sid=J15bYYymSTKnwodSAAAG HTTP/1.1" 200 -
+2024-11-16 21:36:09,700 - INFO - 127.0.0.1 - - [16/Nov/2024 21:36:09] "GET /socket.io/?EIO=4&transport=polling&t=9tf1dtjl&sid=J15bYYymSTKnwodSAAAG HTTP/1.1" 200 -
+2024-11-16 21:39:07,192 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:07] "GET /socket.io/?EIO=4&transport=polling&t=9x7rb8c3 HTTP/1.1" 200 -
+2024-11-16 21:39:07,444 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:07] "POST /socket.io/?EIO=4&transport=polling&t=9x7zw255&sid=m0S7as7NtyuabkfbAAAI HTTP/1.1" 200 -
+2024-11-16 21:39:07,504 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:07] "GET /socket.io/?EIO=4&transport=polling&t=9x7zxhh5&sid=m0S7as7NtyuabkfbAAAI HTTP/1.1" 200 -
+2024-11-16 21:39:07,509 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:07] "GET /socket.io/?EIO=4&transport=polling&t=9x88idgd&sid=m0S7as7NtyuabkfbAAAI HTTP/1.1" 200 -
+2024-11-16 21:39:41,274 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:41] "GET /socket.io/?EIO=4&transport=polling&t=9xy20qsq HTTP/1.1" 200 -
+2024-11-16 21:39:41,526 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:41] "POST /socket.io/?EIO=4&transport=polling&t=9xyalx9c&sid=dXkvzoUoCONqXUa8AAAK HTTP/1.1" 200 -
+2024-11-16 21:39:41,584 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:41] "GET /socket.io/?EIO=4&transport=polling&t=9xyam6zx&sid=dXkvzoUoCONqXUa8AAAK HTTP/1.1" 200 -
+2024-11-16 21:39:41,592 - INFO - 127.0.0.1 - - [16/Nov/2024 21:39:41] "GET /socket.io/?EIO=4&transport=polling&t=9xyj77nf&sid=dXkvzoUoCONqXUa8AAAK HTTP/1.1" 200 -
+2024-11-16 21:40:14,345 - INFO - 127.0.0.1 - - [16/Nov/2024 21:40:14] "OPTIONS /api/register-peer HTTP/1.1" 200 -
+2024-11-16 21:40:14,591 - WARNING - No token provided - IP: 127.0.0.1
+2024-11-16 21:40:14,592 - INFO - 127.0.0.1 - - [16/Nov/2024 21:40:14] "[31m[1mPOST /api/register-peer HTTP/1.1[0m" 401 -
+2024-11-16 21:40:14,653 - ERROR - Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-16 21:40:14,653 - INFO - 127.0.0.1 - - [16/Nov/2024 21:40:14] "[35m[1mOPTIONS /api/auth/register HTTP/1.1[0m" 500 -
+2024-11-16 21:42:11,604 - ERROR - Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-16 21:42:11,605 - INFO - 127.0.0.1 - - [16/Nov/2024 21:42:11] "[35m[1mGET /api/auth/register HTTP/1.1[0m" 500 -
+2024-11-16 21:48:39,148 - INFO - 127.0.0.1 - - [16/Nov/2024 21:48:39] "GET /socket.io/?EIO=4&transport=polling&t=a9h2p4qw HTTP/1.1" 200 -
+2024-11-16 21:48:39,400 - INFO - 127.0.0.1 - - [16/Nov/2024 21:48:39] "POST /socket.io/?EIO=4&transport=polling&t=a9hbkrqz&sid=rX0ul6zLpiZ1f6JvAAAM HTTP/1.1" 200 -
+2024-11-16 21:48:39,459 - INFO - 127.0.0.1 - - [16/Nov/2024 21:48:39] "GET /socket.io/?EIO=4&transport=polling&t=a9hbl2uv&sid=rX0ul6zLpiZ1f6JvAAAM HTTP/1.1" 200 -
+2024-11-16 21:48:39,470 - INFO - 127.0.0.1 - - [16/Nov/2024 21:48:39] "GET /socket.io/?EIO=4&transport=polling&t=a9hk77ap&sid=rX0ul6zLpiZ1f6JvAAAM HTTP/1.1" 200 -
+2024-11-16 21:51:12,002 - INFO - 127.0.0.1 - - [16/Nov/2024 21:51:12] "GET /socket.io/?EIO=4&transport=polling&t=acr0vhwm HTTP/1.1" 200 -
+2024-11-16 21:51:12,254 - INFO - 127.0.0.1 - - [16/Nov/2024 21:51:12] "POST /socket.io/?EIO=4&transport=polling&t=acr9hmjc&sid=WzgrAk5Tuw3ppoH_AAAO HTTP/1.1" 200 -
+2024-11-16 21:51:12,312 - INFO - 127.0.0.1 - - [16/Nov/2024 21:51:12] "GET /socket.io/?EIO=4&transport=polling&t=acr9i4nq&sid=WzgrAk5Tuw3ppoH_AAAO HTTP/1.1" 200 -
+2024-11-16 21:51:12,319 - INFO - 127.0.0.1 - - [16/Nov/2024 21:51:12] "GET /socket.io/?EIO=4&transport=polling&t=acri4ruw&sid=WzgrAk5Tuw3ppoH_AAAO HTTP/1.1" 200 -
+2024-11-16 22:08:21,033 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-16 22:08:21,033 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 22:08:23,406 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayuuo758 HTTP/1.1" 200 -
+2024-11-16 22:08:23,407 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayuuppvk HTTP/1.1" 200 -
+2024-11-16 22:08:23,407 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayuupqxo HTTP/1.1" 200 -
+2024-11-16 22:08:23,408 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayuuql1q HTTP/1.1" 200 -
+2024-11-16 22:08:23,410 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayuuryq2 HTTP/1.1" 200 -
+2024-11-16 22:08:23,412 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayuusqhl HTTP/1.1" 200 -
+2024-11-16 22:08:23,720 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "POST /socket.io/?EIO=4&transport=polling&t=ayv3nmnj&sid=9cVrYd6elLztaaXhAAAA HTTP/1.1" 200 -
+2024-11-16 22:08:23,723 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayv3o6r1&sid=9cVrYd6elLztaaXhAAAA HTTP/1.1" 200 -
+2024-11-16 22:08:23,728 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "POST /socket.io/?EIO=4&transport=polling&t=ayv3pdni&sid=G3nBx4UxwF-uarM_AAAB HTTP/1.1" 200 -
+2024-11-16 22:08:23,730 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayv3qyng&sid=G3nBx4UxwF-uarM_AAAB HTTP/1.1" 200 -
+2024-11-16 22:08:23,740 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "POST /socket.io/?EIO=4&transport=polling&t=ayv3y6gl&sid=0wOyR3fAS9VxDW7CAAAC HTTP/1.1" 200 -
+2024-11-16 22:08:23,741 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:23] "GET /socket.io/?EIO=4&transport=polling&t=ayv40sba&sid=0wOyR3fAS9VxDW7CAAAC HTTP/1.1" 200 -
+2024-11-16 22:08:24,025 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "POST /socket.io/?EIO=4&transport=polling&t=ayv410tb&sid=63YkrYsbU5KwnXtnAAAD HTTP/1.1" 200 -
+2024-11-16 22:08:24,028 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayv41xg8&sid=63YkrYsbU5KwnXtnAAAD HTTP/1.1" 200 -
+2024-11-16 22:08:24,032 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "POST /socket.io/?EIO=4&transport=polling&t=ayv4601x&sid=y69ElYulTvO_oSxrAAAE HTTP/1.1" 200 -
+2024-11-16 22:08:24,035 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayv4847f&sid=y69ElYulTvO_oSxrAAAE HTTP/1.1" 200 -
+2024-11-16 22:08:24,047 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "POST /socket.io/?EIO=4&transport=polling&t=ayv491x3&sid=SPRD658LPMwRe4PGAAAF HTTP/1.1" 200 -
+2024-11-16 22:08:24,048 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayv49n9a&sid=SPRD658LPMwRe4PGAAAF HTTP/1.1" 200 -
+2024-11-16 22:08:24,065 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayvlql5p HTTP/1.1" 200 -
+2024-11-16 22:08:24,074 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "POST /socket.io/?EIO=4&transport=polling&t=ayvlwy02&sid=0ihEPU8Xs92ayOfoAAAM HTTP/1.1" 200 -
+2024-11-16 22:08:24,076 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayvm0c8u&sid=0ihEPU8Xs92ayOfoAAAM HTTP/1.1" 200 -
+2024-11-16 22:08:24,333 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayvcnaaa&sid=G3nBx4UxwF-uarM_AAAB HTTP/1.1" 200 -
+2024-11-16 22:08:24,336 - INFO - 127.0.0.1 - - [16/Nov/2024 22:08:24] "GET /socket.io/?EIO=4&transport=polling&t=ayvcxnxn&sid=0wOyR3fAS9VxDW7CAAAC HTTP/1.1" 200 -
+2024-11-16 22:12:58,263 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-16 22:12:58,263 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 22:12:58,413 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4q9s4xk HTTP/1.1" 200 -
+2024-11-16 22:12:58,415 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4q9tm5d HTTP/1.1" 200 -
+2024-11-16 22:12:58,418 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4q9tfow HTTP/1.1" 200 -
+2024-11-16 22:12:58,421 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4q9vm3t HTTP/1.1" 200 -
+2024-11-16 22:12:58,425 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4q9uuun HTTP/1.1" 200 -
+2024-11-16 22:12:58,428 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4q9v1wz HTTP/1.1" 200 -
+2024-11-16 22:12:58,737 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "POST /socket.io/?EIO=4&transport=polling&t=b4rav8uz&sid=bnZwTgatqcgAz_-XAAAA HTTP/1.1" 200 -
+2024-11-16 22:12:58,742 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4ray8vf&sid=bnZwTgatqcgAz_-XAAAA HTTP/1.1" 200 -
+2024-11-16 22:12:58,743 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "POST /socket.io/?EIO=4&transport=polling&t=b4rb0gog&sid=V7S3I1CyTHEbqwrmAAAB HTTP/1.1" 200 -
+2024-11-16 22:12:58,745 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4rb2grs&sid=V7S3I1CyTHEbqwrmAAAB HTTP/1.1" 200 -
+2024-11-16 22:12:58,748 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "POST /socket.io/?EIO=4&transport=polling&t=b4rb521p&sid=3x_otxGSZ2gnW6g_AAAC HTTP/1.1" 200 -
+2024-11-16 22:12:58,750 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=b4rb6rno&sid=3x_otxGSZ2gnW6g_AAAC HTTP/1.1" 200 -
+2024-11-16 22:12:59,042 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "POST /socket.io/?EIO=4&transport=polling&t=b4rbcya3&sid=GkUwkIM49AI5TEMaAAAD HTTP/1.1" 200 -
+2024-11-16 22:12:59,046 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "GET /socket.io/?EIO=4&transport=polling&t=b4rbd0in&sid=GkUwkIM49AI5TEMaAAAD HTTP/1.1" 200 -
+2024-11-16 22:12:59,048 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "POST /socket.io/?EIO=4&transport=polling&t=b4rbh2y9&sid=WZNnvX3f7DiVXGgQAAAE HTTP/1.1" 200 -
+2024-11-16 22:12:59,052 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "GET /socket.io/?EIO=4&transport=polling&t=b4rbhu90&sid=WZNnvX3f7DiVXGgQAAAE HTTP/1.1" 200 -
+2024-11-16 22:12:59,053 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "POST /socket.io/?EIO=4&transport=polling&t=b4rbi14z&sid=EHWEcgwcmqjprgarAAAF HTTP/1.1" 200 -
+2024-11-16 22:12:59,055 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "GET /socket.io/?EIO=4&transport=polling&t=b4rbihc6&sid=EHWEcgwcmqjprgarAAAF HTTP/1.1" 200 -
+2024-11-16 22:12:59,346 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "GET /socket.io/?EIO=4&transport=polling&t=b4rjzvvc&sid=V7S3I1CyTHEbqwrmAAAB HTTP/1.1" 200 -
+2024-11-16 22:12:59,350 - INFO - 127.0.0.1 - - [16/Nov/2024 22:12:59] "GET /socket.io/?EIO=4&transport=polling&t=b4rk4cez&sid=3x_otxGSZ2gnW6g_AAAC HTTP/1.1" 200 -
+2024-11-16 22:13:01,043 - INFO - 127.0.0.1 - - [16/Nov/2024 22:13:01] "GET /socket.io/?EIO=4&transport=polling&t=b4tbl4o0 HTTP/1.1" 200 -
+2024-11-16 22:13:01,050 - INFO - 127.0.0.1 - - [16/Nov/2024 22:13:01] "POST /socket.io/?EIO=4&transport=polling&t=b4tbprsh&sid=iuzGSqvcUr8kzKNYAAAM HTTP/1.1" 200 -
+2024-11-16 22:13:01,051 - INFO - 127.0.0.1 - - [16/Nov/2024 22:13:01] "GET /socket.io/?EIO=4&transport=polling&t=b4tbqkvj&sid=iuzGSqvcUr8kzKNYAAAM HTTP/1.1" 200 -
+2024-11-16 22:15:49,402 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-16 22:15:49,403 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-16 22:15:49,403 - INFO -  * Restarting with stat
+2024-11-16 22:15:50,518 - WARNING -  * Debugger is active!
+2024-11-16 22:15:50,522 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:15:50,862 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:50] "GET /socket.io/?EIO=4&transport=polling&t=b8frc6hm HTTP/1.1" 200 -
+2024-11-16 22:15:50,863 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:50] "GET /socket.io/?EIO=4&transport=polling&t=b8frbcu7 HTTP/1.1" 200 -
+2024-11-16 22:15:50,863 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:50] "GET /socket.io/?EIO=4&transport=polling&t=b8frcbbk HTTP/1.1" 200 -
+2024-11-16 22:15:50,868 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:50] "GET /socket.io/?EIO=4&transport=polling&t=b8frdu7t HTTP/1.1" 200 -
+2024-11-16 22:15:50,869 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:50] "GET /socket.io/?EIO=4&transport=polling&t=b8frdbf9 HTTP/1.1" 200 -
+2024-11-16 22:15:50,871 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:50] "GET /socket.io/?EIO=4&transport=polling&t=b8free1o HTTP/1.1" 200 -
+2024-11-16 22:15:51,180 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "POST /socket.io/?EIO=4&transport=polling&t=b8gcyo3d&sid=kNF44gioiYGeEGRHAAAA HTTP/1.1" 200 -
+2024-11-16 22:15:51,184 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gd0y12&sid=kNF44gioiYGeEGRHAAAA HTTP/1.1" 200 -
+2024-11-16 22:15:51,185 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "POST /socket.io/?EIO=4&transport=polling&t=b8gd1u8t&sid=s4wj07r8neKn_24RAAAB HTTP/1.1" 200 -
+2024-11-16 22:15:51,192 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gd25gy&sid=s4wj07r8neKn_24RAAAB HTTP/1.1" 200 -
+2024-11-16 22:15:51,195 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "POST /socket.io/?EIO=4&transport=polling&t=b8gd4fxe&sid=GPcrA9XEvB8gEj7BAAAC HTTP/1.1" 200 -
+2024-11-16 22:15:51,195 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gd4nxt&sid=GPcrA9XEvB8gEj7BAAAC HTTP/1.1" 200 -
+2024-11-16 22:15:51,485 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "POST /socket.io/?EIO=4&transport=polling&t=b8gdehrq&sid=fqeTZihGj9yQcJ5WAAAE HTTP/1.1" 200 -
+2024-11-16 22:15:51,488 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gdfw01&sid=fqeTZihGj9yQcJ5WAAAE HTTP/1.1" 200 -
+2024-11-16 22:15:51,490 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "POST /socket.io/?EIO=4&transport=polling&t=b8gdge7q&sid=JSy416r2ks5OeULcAAAD HTTP/1.1" 200 -
+2024-11-16 22:15:51,498 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gdhd1k&sid=JSy416r2ks5OeULcAAAD HTTP/1.1" 200 -
+2024-11-16 22:15:51,501 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "POST /socket.io/?EIO=4&transport=polling&t=b8gdhx22&sid=X5FB6WxjEWM_o2cZAAAF HTTP/1.1" 200 -
+2024-11-16 22:15:51,502 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gdirls&sid=X5FB6WxjEWM_o2cZAAAF HTTP/1.1" 200 -
+2024-11-16 22:15:51,789 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gm6jjw&sid=s4wj07r8neKn_24RAAAB HTTP/1.1" 200 -
+2024-11-16 22:15:51,792 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:51] "GET /socket.io/?EIO=4&transport=polling&t=b8gmbq3z&sid=GPcrA9XEvB8gEj7BAAAC HTTP/1.1" 200 -
+2024-11-16 22:15:52,354 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:52] "GET /socket.io/?EIO=4&transport=polling&t=b8hi8n2l HTTP/1.1" 200 -
+2024-11-16 22:15:52,357 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:52] "POST /socket.io/?EIO=4&transport=polling&t=b8hib1zm&sid=b_w4MeryuXa1i8jSAAAM HTTP/1.1" 200 -
+2024-11-16 22:15:52,359 - INFO - 127.0.0.1 - - [16/Nov/2024 22:15:52] "GET /socket.io/?EIO=4&transport=polling&t=b8hic6fr&sid=b_w4MeryuXa1i8jSAAAM HTTP/1.1" 200 -
+2024-11-16 22:16:18,213 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:18] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-16 22:16:18,686 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-16 22:16:28,639 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:28] "GET /socket.io/?EIO=4&transport=websocket&sid=GPcrA9XEvB8gEj7BAAAC HTTP/1.1" 200 -
+2024-11-16 22:16:28,639 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:28] "GET /socket.io/?EIO=4&transport=websocket&sid=s4wj07r8neKn_24RAAAB HTTP/1.1" 200 -
+2024-11-16 22:16:28,642 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:28] "GET /socket.io/?EIO=4&transport=websocket&sid=kNF44gioiYGeEGRHAAAA HTTP/1.1" 200 -
+2024-11-16 22:16:28,643 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:28] "GET /socket.io/?EIO=4&transport=websocket&sid=X5FB6WxjEWM_o2cZAAAF HTTP/1.1" 200 -
+2024-11-16 22:16:28,648 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:28] "GET /socket.io/?EIO=4&transport=websocket&sid=JSy416r2ks5OeULcAAAD HTTP/1.1" 200 -
+2024-11-16 22:16:28,655 - INFO - 127.0.0.1 - - [16/Nov/2024 22:16:28] "GET /socket.io/?EIO=4&transport=websocket&sid=fqeTZihGj9yQcJ5WAAAE HTTP/1.1" 200 -
+2024-11-16 22:17:14,565 - INFO - 127.0.0.1 - - [16/Nov/2024 22:17:14] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-16 22:19:08,498 - INFO - 127.0.0.1 - - [16/Nov/2024 22:19:08] "[31m[1mGET /api/auth/register HTTP/1.1[0m" 405 -
+2024-11-16 22:19:15,364 - INFO - 127.0.0.1 - - [16/Nov/2024 22:19:15] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 405 -
+2024-11-16 22:20:57,698 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\app.py', reloading
+2024-11-16 22:20:57,805 - INFO -  * Restarting with stat
+2024-11-16 22:20:59,584 - WARNING -  * Debugger is active!
+2024-11-16 22:20:59,588 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:20:59,850 - INFO - 127.0.0.1 - - [16/Nov/2024 22:20:59] "GET /socket.io/?EIO=4&transport=polling&t=bf1yb68x HTTP/1.1" 200 -
+2024-11-16 22:20:59,856 - INFO - 127.0.0.1 - - [16/Nov/2024 22:20:59] "POST /socket.io/?EIO=4&transport=polling&t=bf2rwdlf&sid=c49GtM1RW26Mw5CYAAAA HTTP/1.1" 200 -
+2024-11-16 22:20:59,860 - INFO - 127.0.0.1 - - [16/Nov/2024 22:20:59] "GET /socket.io/?EIO=4&transport=polling&t=bf2rx8pa&sid=c49GtM1RW26Mw5CYAAAA HTTP/1.1" 200 -
+2024-11-16 22:22:34,924 - INFO - 127.0.0.1 - - [16/Nov/2024 22:22:34] "GET / HTTP/1.1" 200 -
+2024-11-16 22:24:28,351 - INFO - 127.0.0.1 - - [16/Nov/2024 22:24:28] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 405 -
+2024-11-16 22:24:42,715 - INFO - 127.0.0.1 - - [16/Nov/2024 22:24:42] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 405 -
+2024-11-16 22:25:55,687 - INFO - 127.0.0.1 - - [16/Nov/2024 22:25:55] "GET /socket.io/?EIO=4&transport=polling&t=blet1gxf HTTP/1.1" 200 -
+2024-11-16 22:25:55,940 - INFO - 127.0.0.1 - - [16/Nov/2024 22:25:55] "POST /socket.io/?EIO=4&transport=polling&t=blf1p6j3&sid=QLHU9vAK1cwZoiP0AAAC HTTP/1.1" 200 -
+2024-11-16 22:25:55,999 - INFO - 127.0.0.1 - - [16/Nov/2024 22:25:55] "GET /socket.io/?EIO=4&transport=polling&t=blf1qg5e&sid=QLHU9vAK1cwZoiP0AAAC HTTP/1.1" 200 -
+2024-11-16 22:25:56,012 - INFO - 127.0.0.1 - - [16/Nov/2024 22:25:56] "GET /socket.io/?EIO=4&transport=polling&t=blfaeb88&sid=QLHU9vAK1cwZoiP0AAAC HTTP/1.1" 200 -
+2024-11-16 22:26:20,109 - INFO - 127.0.0.1 - - [16/Nov/2024 22:26:20] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2024-11-16 22:26:20,363 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 22:26:20,363 - INFO - New user registered: tranquocanh200003@gmail.com
+2024-11-16 22:26:20,363 - INFO - 127.0.0.1 - - [16/Nov/2024 22:26:20] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2024-11-16 22:26:20,418 - INFO - 127.0.0.1 - - [16/Nov/2024 22:26:20] "[33mOPTIONS /api/signaling/connect HTTP/1.1[0m" 404 -
+2024-11-16 22:29:49,085 - INFO - 127.0.0.1 - - [16/Nov/2024 22:29:49] "GET /socket.io/?EIO=4&transport=websocket&sid=QLHU9vAK1cwZoiP0AAAC HTTP/1.1" 200 -
+2024-11-16 22:29:56,067 - INFO - 127.0.0.1 - - [16/Nov/2024 22:29:56] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2024-11-16 22:29:56,319 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 22:29:56,319 - INFO - New user registered: tranquocanh200003@gmail.com
+2024-11-16 22:29:56,319 - INFO - 127.0.0.1 - - [16/Nov/2024 22:29:56] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2024-11-16 22:38:20,097 - INFO - 127.0.0.1 - - [16/Nov/2024 22:38:20] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:38:20,348 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 22:38:20,348 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-16 22:38:20,350 - INFO - 127.0.0.1 - - [16/Nov/2024 22:38:20] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:38:29,951 - INFO - 127.0.0.1 - - [16/Nov/2024 22:38:29] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:38:30,266 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 22:38:30,266 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-16 22:38:30,267 - INFO - 127.0.0.1 - - [16/Nov/2024 22:38:30] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:44:06,772 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-16 22:44:06,828 - INFO -  * Restarting with stat
+2024-11-16 22:44:08,033 - WARNING -  * Debugger is active!
+2024-11-16 22:44:08,039 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:44:08,406 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:08] "GET /socket.io/?EIO=4&transport=polling&t=c8u1nbih HTTP/1.1" 200 -
+2024-11-16 22:44:08,417 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:08] "POST /socket.io/?EIO=4&transport=polling&t=c8u6zzcf&sid=CHLdpq9I_-shZUz4AAAA HTTP/1.1" 200 -
+2024-11-16 22:44:08,419 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:08] "GET /socket.io/?EIO=4&transport=polling&t=c8u72eif&sid=CHLdpq9I_-shZUz4AAAA HTTP/1.1" 200 -
+2024-11-16 22:44:08,422 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:08] "GET /socket.io/?EIO=4&transport=polling&t=c8u78vrg&sid=CHLdpq9I_-shZUz4AAAA HTTP/1.1" 200 -
+2024-11-16 22:44:38,823 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-16 22:44:38,891 - INFO -  * Restarting with stat
+2024-11-16 22:44:39,971 - WARNING -  * Debugger is active!
+2024-11-16 22:44:39,975 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:44:40,153 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:40] "GET /socket.io/?EIO=4&transport=polling&t=c9i5vb10 HTTP/1.1" 200 -
+2024-11-16 22:44:40,160 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:40] "POST /socket.io/?EIO=4&transport=polling&t=c9ios28d&sid=eCStYxnZGKMSBrzCAAAA HTTP/1.1" 200 -
+2024-11-16 22:44:40,162 - INFO - 127.0.0.1 - - [16/Nov/2024 22:44:40] "GET /socket.io/?EIO=4&transport=polling&t=c9iouc73&sid=eCStYxnZGKMSBrzCAAAA HTTP/1.1" 200 -
+2024-11-16 22:47:02,676 - INFO - 127.0.0.1 - - [16/Nov/2024 22:47:02] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:47:02,926 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 22:47:02,926 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-16 22:47:02,927 - INFO - 127.0.0.1 - - [16/Nov/2024 22:47:02] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:47:25,327 - INFO - 127.0.0.1 - - [16/Nov/2024 22:47:25] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2024-11-16 22:47:25,578 - INFO - Token created for user: ta04102010@gmail.com
+2024-11-16 22:47:25,578 - INFO - New user registered: ta04102010@gmail.com
+2024-11-16 22:47:25,579 - INFO - 127.0.0.1 - - [16/Nov/2024 22:47:25] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2024-11-16 22:52:13,618 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\config.py', reloading
+2024-11-16 22:52:13,841 - INFO -  * Restarting with stat
+2024-11-16 22:52:19,489 - WARNING -  * Debugger is active!
+2024-11-16 22:52:19,502 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:52:20,103 - INFO - 127.0.0.1 - - [16/Nov/2024 22:52:20] "GET /socket.io/?EIO=4&transport=polling&t=cj9lcttc HTTP/1.1" 200 -
+2024-11-16 22:52:20,131 - INFO - 127.0.0.1 - - [16/Nov/2024 22:52:20] "POST /socket.io/?EIO=4&transport=polling&t=cjdl9gmi&sid=aEj4cLSqGl6O3YKPAAAA HTTP/1.1" 200 -
+2024-11-16 22:52:20,137 - INFO - 127.0.0.1 - - [16/Nov/2024 22:52:20] "GET /socket.io/?EIO=4&transport=polling&t=cjdlh5h6&sid=aEj4cLSqGl6O3YKPAAAA HTTP/1.1" 200 -
+2024-11-16 22:55:41,381 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-16 22:55:41,449 - INFO -  * Restarting with stat
+2024-11-16 22:55:42,723 - WARNING -  * Debugger is active!
+2024-11-16 22:55:42,728 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:55:42,918 - INFO - 127.0.0.1 - - [16/Nov/2024 22:55:42] "GET /socket.io/?EIO=4&transport=polling&t=cnpzpt22 HTTP/1.1" 200 -
+2024-11-16 22:55:42,929 - INFO - 127.0.0.1 - - [16/Nov/2024 22:55:42] "POST /socket.io/?EIO=4&transport=polling&t=cnq2xa7w&sid=KxH9D7YQFL9qp4QvAAAA HTTP/1.1" 200 -
+2024-11-16 22:55:42,931 - INFO - 127.0.0.1 - - [16/Nov/2024 22:55:42] "GET /socket.io/?EIO=4&transport=polling&t=cnq31wsr&sid=KxH9D7YQFL9qp4QvAAAA HTTP/1.1" 200 -
+2024-11-16 22:57:21,379 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\config.py', reloading
+2024-11-16 22:57:21,603 - INFO -  * Restarting with stat
+2024-11-16 22:57:24,713 - WARNING -  * Debugger is active!
+2024-11-16 22:57:24,721 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:57:25,070 - INFO - 127.0.0.1 - - [16/Nov/2024 22:57:25] "GET /socket.io/?EIO=4&transport=polling&t=cputum4n HTTP/1.1" 200 -
+2024-11-16 22:57:25,083 - INFO - 127.0.0.1 - - [16/Nov/2024 22:57:25] "POST /socket.io/?EIO=4&transport=polling&t=cpwwig9a&sid=uDYOmle0HaN9kHbKAAAA HTTP/1.1" 200 -
+2024-11-16 22:57:25,087 - INFO - 127.0.0.1 - - [16/Nov/2024 22:57:25] "GET /socket.io/?EIO=4&transport=polling&t=cpwwl1ry&sid=uDYOmle0HaN9kHbKAAAA HTTP/1.1" 200 -
+2024-11-16 22:58:30,212 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-16 22:58:30,321 - INFO -  * Restarting with stat
+2024-11-16 22:58:32,211 - WARNING -  * Debugger is active!
+2024-11-16 22:58:32,217 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 22:58:32,590 - INFO - 127.0.0.1 - - [16/Nov/2024 22:58:32] "GET /socket.io/?EIO=4&transport=polling&t=crcaxw94 HTTP/1.1" 200 -
+2024-11-16 22:58:32,599 - INFO - 127.0.0.1 - - [16/Nov/2024 22:58:32] "POST /socket.io/?EIO=4&transport=polling&t=crd01ang&sid=D8GpZI3r6TwMj70TAAAA HTTP/1.1" 200 -
+2024-11-16 22:58:32,601 - INFO - 127.0.0.1 - - [16/Nov/2024 22:58:32] "GET /socket.io/?EIO=4&transport=polling&t=crd03doh&sid=D8GpZI3r6TwMj70TAAAA HTTP/1.1" 200 -
+2024-11-16 22:58:32,607 - INFO - 127.0.0.1 - - [16/Nov/2024 22:58:32] "GET /socket.io/?EIO=4&transport=polling&t=crd0bz21&sid=D8GpZI3r6TwMj70TAAAA HTTP/1.1" 200 -
+2024-11-16 22:59:09,201 - INFO - 127.0.0.1 - - [16/Nov/2024 22:59:09] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-16 22:59:09,454 - INFO - User login attempt: tranquocanh200003@gmail.com
+2024-11-16 22:59:09,454 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 22:59:09,454 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-16 22:59:09,454 - INFO - 127.0.0.1 - - [16/Nov/2024 22:59:09] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-16 23:02:18,965 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\app.py', reloading
+2024-11-16 23:02:19,120 - INFO -  * Restarting with stat
+2024-11-16 23:02:22,764 - WARNING -  * Debugger is active!
+2024-11-16 23:02:22,770 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 23:02:23,080 - INFO - 127.0.0.1 - - [16/Nov/2024 23:02:23] "GET /socket.io/?EIO=4&transport=polling&t=cw8bo870 HTTP/1.1" 200 -
+2024-11-16 23:02:23,090 - INFO - 127.0.0.1 - - [16/Nov/2024 23:02:23] "POST /socket.io/?EIO=4&transport=polling&t=cwaujawt&sid=ej-p8vWezSlLbfn9AAAA HTTP/1.1" 200 -
+2024-11-16 23:02:23,093 - INFO - 127.0.0.1 - - [16/Nov/2024 23:02:23] "GET /socket.io/?EIO=4&transport=polling&t=cwaumqx0&sid=ej-p8vWezSlLbfn9AAAA HTTP/1.1" 200 -
+2024-11-16 23:06:05,568 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-16 23:06:05,700 - INFO -  * Restarting with stat
+2024-11-16 23:06:08,413 - WARNING -  * Debugger is active!
+2024-11-16 23:06:08,422 - INFO -  * Debugger PIN: 225-881-840
+2024-11-16 23:06:08,804 - INFO - 127.0.0.1 - - [16/Nov/2024 23:06:08] "GET /socket.io/?EIO=4&transport=polling&t=d13d8wne HTTP/1.1" 200 -
+2024-11-16 23:06:08,814 - INFO - 127.0.0.1 - - [16/Nov/2024 23:06:08] "POST /socket.io/?EIO=4&transport=polling&t=d150lkkf&sid=w4-Z4IRXK76eyLrrAAAA HTTP/1.1" 200 -
+2024-11-16 23:06:08,818 - INFO - 127.0.0.1 - - [16/Nov/2024 23:06:08] "GET /socket.io/?EIO=4&transport=polling&t=d150nv5b&sid=w4-Z4IRXK76eyLrrAAAA HTTP/1.1" 200 -
+2024-11-16 23:19:32,537 - INFO - 127.0.0.1 - - [16/Nov/2024 23:19:32] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-16 23:19:32,787 - INFO - User login attempt: ta04102010@gmail.com
+2024-11-16 23:19:32,789 - INFO - Token created for user: ta04102010@gmail.com
+2024-11-16 23:19:32,790 - INFO - User logged in: ta04102010@gmail.com
+2024-11-16 23:19:32,791 - INFO - 127.0.0.1 - - [16/Nov/2024 23:19:32] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-16 23:21:47,046 - INFO - 127.0.0.1 - - [16/Nov/2024 23:21:47] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-16 23:21:47,298 - INFO - User login attempt: tranquocanh200003@gmail.com
+2024-11-16 23:21:47,298 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-16 23:21:47,298 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-16 23:21:47,298 - INFO - 127.0.0.1 - - [16/Nov/2024 23:21:47] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-16 23:55:41,818 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\app.py', reloading
+2024-11-16 23:55:41,930 - INFO -  * Restarting with stat
+2024-11-17 00:08:12,473 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-17 00:08:12,473 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-17 00:08:12,474 - INFO -  * Restarting with stat
+2024-11-17 00:08:14,974 - WARNING -  * Debugger is active!
+2024-11-17 00:08:14,980 - INFO -  * Debugger PIN: 225-881-840
+2024-11-17 00:08:15,626 - INFO - 127.0.0.1 - - [17/Nov/2024 00:08:15] "GET /socket.io/?EIO=4&transport=polling&t=f90nbfd2 HTTP/1.1" 200 -
+2024-11-17 00:08:15,640 - INFO - 127.0.0.1 - - [17/Nov/2024 00:08:15] "POST /socket.io/?EIO=4&transport=polling&t=f90nj0il&sid=8h9MD78wqYu5cdo5AAAC HTTP/1.1" 200 -
+2024-11-17 00:08:15,643 - INFO - 127.0.0.1 - - [17/Nov/2024 00:08:15] "GET /socket.io/?EIO=4&transport=polling&t=f90noaa5&sid=8h9MD78wqYu5cdo5AAAC HTTP/1.1" 200 -
+2024-11-17 00:08:15,651 - INFO - 127.0.0.1 - - [17/Nov/2024 00:08:15] "GET /socket.io/?EIO=4&transport=polling&t=f90ny36a&sid=8h9MD78wqYu5cdo5AAAC HTTP/1.1" 200 -
+2024-11-17 00:09:08,289 - INFO - 127.0.0.1 - - [17/Nov/2024 00:09:08] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-17 00:09:08,540 - INFO - User login attempt: tranquocanh200003@gmail.com
+2024-11-17 00:09:08,540 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-17 00:09:08,541 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-17 00:09:08,541 - INFO - 127.0.0.1 - - [17/Nov/2024 00:09:08] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-17 00:09:32,196 - INFO - 127.0.0.1 - - [17/Nov/2024 00:09:32] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-17 00:09:32,448 - INFO - User login attempt: tranquocanh200003@gmail.com
+2024-11-17 00:09:32,449 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-17 00:09:32,449 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-17 00:09:32,449 - INFO - 127.0.0.1 - - [17/Nov/2024 00:09:32] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-17 00:14:11,648 - INFO - 127.0.0.1 - - [17/Nov/2024 00:14:11] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2024-11-17 00:14:11,898 - INFO - User login attempt: tranquocanh200003@gmail.com
+2024-11-17 00:14:11,898 - INFO - Token created for user: tranquocanh200003@gmail.com
+2024-11-17 00:14:11,898 - INFO - User logged in: tranquocanh200003@gmail.com
+2024-11-17 00:14:11,899 - INFO - 127.0.0.1 - - [17/Nov/2024 00:14:11] "POST /api/auth/login HTTP/1.1" 200 -
+2024-11-17 00:15:15,329 - INFO - 127.0.0.1 - - [17/Nov/2024 00:15:15] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 405 -
+2024-11-17 00:36:37,664 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-17 00:36:37,761 - INFO -  * Restarting with stat
+2024-11-17 00:36:40,041 - WARNING -  * Debugger is active!
+2024-11-17 00:36:40,048 - INFO -  * Debugger PIN: 225-881-840
+2024-11-17 00:36:40,369 - INFO - 127.0.0.1 - - [17/Nov/2024 00:36:40] "GET /socket.io/?EIO=4&transport=polling&t=g9j5jlq7 HTTP/1.1" 200 -
+2024-11-17 00:36:40,383 - INFO - 127.0.0.1 - - [17/Nov/2024 00:36:40] "POST /socket.io/?EIO=4&transport=polling&t=g9k1i09z&sid=iAXW-6p7B8_r5hoeAAAA HTTP/1.1" 200 -
+2024-11-17 00:36:40,387 - INFO - 127.0.0.1 - - [17/Nov/2024 00:36:40] "GET /socket.io/?EIO=4&transport=polling&t=g9k1nk62&sid=iAXW-6p7B8_r5hoeAAAA HTTP/1.1" 200 -
+2024-11-17 00:36:40,391 - INFO - 127.0.0.1 - - [17/Nov/2024 00:36:40] "GET /socket.io/?EIO=4&transport=polling&t=g9k1x480&sid=iAXW-6p7B8_r5hoeAAAA HTTP/1.1" 200 -
+2024-11-17 00:36:42,452 - ERROR - Login error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-17 00:36:42,453 - INFO - 127.0.0.1 - - [17/Nov/2024 00:36:42] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 400 -
+2024-11-17 00:36:58,047 - INFO - 127.0.0.1 - - [17/Nov/2024 00:36:58] "GET / HTTP/1.1" 200 -
+2024-11-17 00:38:52,914 - ERROR - Login error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-17 00:38:52,914 - INFO - 127.0.0.1 - - [17/Nov/2024 00:38:52] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 400 -
+2024-11-17 00:38:54,669 - ERROR - Login error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-17 00:38:54,670 - INFO - 127.0.0.1 - - [17/Nov/2024 00:38:54] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 400 -
+2024-11-17 00:39:19,799 - INFO - 127.0.0.1 - - [17/Nov/2024 00:39:19] "[33mGET /api/auth/resigter HTTP/1.1[0m" 404 -
+2024-11-17 00:39:40,798 - ERROR - Registration error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-17 00:39:40,798 - INFO - 127.0.0.1 - - [17/Nov/2024 00:39:40] "[31m[1mGET /api/auth/register HTTP/1.1[0m" 400 -
+2024-11-17 00:46:16,308 - ERROR - Registration error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-17 00:46:16,309 - INFO - 127.0.0.1 - - [17/Nov/2024 00:46:16] "[31m[1mGET /api/auth/register HTTP/1.1[0m" 400 -
+2024-11-17 00:49:07,064 - ERROR - Login error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-17 00:49:07,067 - INFO - 127.0.0.1 - - [17/Nov/2024 00:49:07] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 400 -
+2024-11-17 00:49:25,731 - INFO - 127.0.0.1 - - [17/Nov/2024 00:49:25] "OPTIONS /api/auth/register HTTP/1.1" 200 -
+2024-11-17 00:49:26,504 - INFO - Registering new user: tranhuuducchoi@icloud.com with peer ID: 8070308a-3373-4fab-b429-7449148c6f68
+2024-11-17 00:49:26,505 - INFO - Token created for user: tranhuuducchoi@icloud.com
+2024-11-17 00:49:26,506 - INFO - New user registered: tranhuuducchoi@icloud.com
+2024-11-17 00:49:26,508 - INFO - 127.0.0.1 - - [17/Nov/2024 00:49:26] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2024-11-17 04:55:11,411 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-17 04:55:11,412 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-17 04:55:11,412 - INFO -  * Restarting with stat
+2024-11-17 04:55:14,871 - WARNING -  * Debugger is active!
+2024-11-17 04:55:14,883 - INFO -  * Debugger PIN: 225-881-840
+2024-11-17 04:55:43,850 - INFO - 127.0.0.1 - - [17/Nov/2024 04:55:43] "GET / HTTP/1.1" 200 -
+2024-11-17 04:55:44,886 - INFO - 127.0.0.1 - - [17/Nov/2024 04:55:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-17 04:59:12,700 - INFO - 127.0.0.1 - - [17/Nov/2024 04:59:12] "GET / HTTP/1.1" 200 -
+2024-11-17 04:59:13,623 - INFO - 127.0.0.1 - - [17/Nov/2024 04:59:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-17 04:59:49,485 - INFO - 127.0.0.1 - - [17/Nov/2024 04:59:49] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-17 05:11:13,689 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-17 05:11:13,690 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-17 05:11:13,690 - INFO -  * Restarting with stat
+2024-11-17 05:11:16,601 - WARNING -  * Debugger is active!
+2024-11-17 05:11:16,611 - INFO -  * Debugger PIN: 225-881-840
+2024-11-17 05:11:24,905 - INFO - 127.0.0.1 - - [17/Nov/2024 05:11:24] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-17 05:12:06,107 - INFO - 127.0.0.1 - - [17/Nov/2024 05:12:06] "[33mGET /api/login HTTP/1.1[0m" 404 -
+2024-11-17 05:12:32,972 - WARNING - No token provided - IP: 127.0.0.1
+2024-11-17 05:12:32,973 - INFO - 127.0.0.1 - - [17/Nov/2024 05:12:32] "[31m[1mGET /api/peers HTTP/1.1[0m" 401 -
+2024-11-17 05:13:30,920 - INFO - 127.0.0.1 - - [17/Nov/2024 05:13:30] "[33mGET /auth/login HTTP/1.1[0m" 404 -
+2024-11-17 05:25:48,178 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-17 05:25:48,348 - INFO -  * Restarting with stat
+2024-11-17 05:25:51,633 - WARNING -  * Debugger is active!
+2024-11-17 05:25:51,643 - INFO -  * Debugger PIN: 225-881-840
+2024-11-17 05:27:52,286 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-17 05:27:52,440 - INFO -  * Restarting with stat
+2024-11-17 05:27:55,234 - WARNING -  * Debugger is active!
+2024-11-17 05:27:55,242 - INFO -  * Debugger PIN: 225-881-840
+2024-11-17 05:30:02,402 - INFO -  * Detected change in 'E:\\CODE\\HT mang may tinh\\chat_app1\\Back-end\\routes.py', reloading
+2024-11-17 05:30:02,550 - INFO -  * Restarting with stat
+2024-11-17 05:30:05,988 - WARNING -  * Debugger is active!
+2024-11-17 05:30:05,999 - INFO -  * Debugger PIN: 225-881-840
