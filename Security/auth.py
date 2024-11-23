@@ -1,41 +1,64 @@
 import jwt
 import datetime
-from flask import request, jsonify
+from flask import Flask,request, jsonify,make_response
 from functools import wraps
+from flask_bcrypt import Bcrypt 
+from encryption import token_required,encode_jwt
 
-def encode_jwt(user_id, secret_key):
-    payload = {
-        'user_id': user_id,
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'
+bcrypt = Bcrypt(app)
+
+@app.route('/login', methods=['POST']) 
+@token_required 
+def login(): 
+    data = request.get_json() 
+    username = data.get('username') 
+    password = data.get('password')
+    if username == 'admin' and password == 'password': 
+       token = encode_jwt(user_id=1, secret_key=app.config['SECRET_KEY']) 
+       return jsonify({'token': token})
+    return jsonify({'message': 'Invalid credentials!'}), 401
+
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.json
+    username = data.get('username')
+    email = data.get('email')
+    password = data.get('password')
+
+    if not username or not email or not password:
+        return jsonify({"error": "Missing required fields"}), 400
+
+    # Mã hóa mật khẩu
+    hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+
+    # Tạo token JWT
+    token = jwt.encode({
+        'username': username,
+        'email': email,
         'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)
-    }
-    token = jwt.encode(payload, secret_key, algorithm='HS256')
-    return token
+    }, app.secret_key, algorithm='HS256')
 
-def decode_jwt(token, secret_key):
+    # Lưu token vào cookie
+    response = make_response(jsonify({"message": "User registered successfully"}))
+    response.set_cookie('auth_token', token, httponly=True)
+
+    return response
+
+@app.route('/get_user', methods=['GET'])
+def get_user():
+    token = request.cookies.get('auth_token')
+    if not token:
+        return jsonify({"error": "No token found"}), 403
+
     try:
-        payload = jwt.decode(token, secret_key, algorithms=['HS256'])
-        return payload['user_id']
+        decoded_token = jwt.decode(token, app.secret_key, algorithms=['HS256'])
+        return jsonify({"user": decoded_token}), 200
     except jwt.ExpiredSignatureError:
-        return None
+        return jsonify({"error": "Token has expired"}), 403
     except jwt.InvalidTokenError:
-        return None
-
-def token_required(f):
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        token = request.headers.get('Authorization')
-
-        if not token:
-            return jsonify({'message': 'Token is missing!'}), 403
-
-        try:
-            from app import app  # import để lấy SECRET_KEY từ app
-            user_id = decode_jwt(token, app.config['SECRET_KEY'])
-            if not user_id:
-                return jsonify({'message': 'Token is invalid or expired!'}), 403
-        except:
-            return jsonify({'message': 'Token is invalid!'}), 403
-
-        return f(user_id, *args, **kwargs)
-
-    return decorated
+        return jsonify({"error": "Invalid token"}), 403
+    
+if __name__ == '__main__':
+    app.run(debug=True)
