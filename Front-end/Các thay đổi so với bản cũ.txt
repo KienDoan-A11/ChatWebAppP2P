@@ -1,0 +1,36 @@
+1.Các thay đổi:
+Thư viện cài đặt: simple-peer.
+Chức năng: Thư viện này cung cấp một cách dễ dàng để thiết lập kết nối ngang hàng (P2P) giữa hai thiết bị, cho phép truyền dữ liệu như tin nhắn. (trong file package.json)
+
+
+
+Tạo mới file components/P2PChat.tsx
+Chức năng của file này:
+Thiết lập kết nối WebRTC giữa hai người dùng:
+Người tạo kết nối: Tạo một Peer ID để chia sẻ.
+Người kết nối: Dùng Peer ID của người khác để kết nối.
+Hỗ trợ gửi và nhận tin nhắn theo thời gian thực thông qua kết nối P2P.
+Hiển thị tin nhắn đã gửi và nhận trên giao diện chat.
+
+
+
+Tạo mới file pages/index.tsx
+Chức năng của file này:
+Tích hợp và hiển thị giao diện chat.
+Đưa tính năng chat P2P ra trang chính của ứng dụng.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2.Hướng dẫn sử dụng tính năng chat:
+Tạo kết nối:
+
+Một người dùng bấm nút "Create Connection" để tạo Peer ID.
+Sao chép Peer ID hiển thị và gửi nó cho người khác.
+Kết nối:
+
+Người thứ hai nhập Peer ID của bạn vào ô "Enter Peer ID" và bấm "Connect".
+Gửi tin nhắn:
+
+Nhập tin nhắn vào ô chat và nhấn "Send".
+Tin nhắn sẽ hiển thị trong khung chat của cả hai.
