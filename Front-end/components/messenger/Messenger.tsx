@@ -7,8 +7,8 @@ import { MessageList } from './MessageList'
 import { MessageInput } from './MessageInput'
 import { InfoPanel } from './InfoPanel'
 import { AddFriendModal } from './AddFriendModal'
-import { mockConversations, mockMessages, emojis } from '@/types/messenger'
-import type { Message, Conversation } from '@/types/messenger'
+import { mockConversations, mockMessages, emojis } from '../../types/messenger'
+import type { Message, Conversation } from '../../types/messenger'
 
 export default function Messenger() {
   const [activeConversation, setActiveConversation] = useState(0)
@@ -62,7 +62,7 @@ export default function Messenger() {
   const handleConversationChange = (conversationId: number) => {
     setActiveConversation(conversationId)
     setMessages(mockMessages[conversationId] || [])
-    setConversations(conversations.map(conv => 
+    setConversations(conversations.map((conv: Conversation) => 
       conv.id === conversationId ? { ...conv, unreadCount: 0 } : conv
     ))
   }
