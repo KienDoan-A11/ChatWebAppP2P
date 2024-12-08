@@ -1,5 +1,5 @@
 # Cấu trúc
-Final_dieuchinh
+Các file:
 
  index.html          # Giao diện người dùng
  
