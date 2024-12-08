@@ -1,10 +1,10 @@
 # Cấu trúc
-Final_dieuchinh/
-├── index.html          # Giao diện người dùng
-├── style.css           # Styles cho UI
-├── script.js           # Logic xử lý frontend
-├── server.js           # Server signaling
-└── package.json        # Dependencies
+Final_dieuchinh
+ index.html          # Giao diện người dùng
+ style.css           # Styles cho UI
+ script.js           # Logic xử lý frontend
+ server.js           # Server signaling
+ package.json        # Dependencies
 
 # Cách sử dụng
 1. npm install (install thư viện cần thiết)
