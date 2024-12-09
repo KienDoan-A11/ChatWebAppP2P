@@ -15,36 +15,58 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f2f5;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80');
+    background-size: cover;
+    background-position: center;
 }
 
 .login-box {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+.login-box h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
 }
 
 .login-box input {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     margin: 10px 0;
     border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-box input:focus {
+    border-color: #0095f6;
+    outline: none;
 }
 
 .login-box button {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     background: #0095f6;
     color: white;
     border: none;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background-color: #0081d6;
 }
 
 #chat-screen {
@@ -80,37 +102,52 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: all 0.3s ease;
     position: relative;
-    gap: 10px;
+    gap: 12px;
 }
 
 .online-user:hover {
-    background-color: #fafafa;
+    transform: translateX(5px);
+    background-color: #f8f9fa;
 }
 
 .online-user.active {
-    background-color: #efefef;
+    background-color: #e8f5fe;
 }
 
-.online-user span {
-    font-size: 14px;
-    color: #262626;
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .online-status {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     background-color: #31a24c;
     border-radius: 50%;
-    display: inline-block;
-    margin-right: 2px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 0 2px #fff;
 }
 
-.online-user span.username {
+.username {
     flex: 1;
     font-size: 14px;
     color: #262626;
+    font-weight: 500;
 }
 
 .unread-badge {
@@ -124,8 +161,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 20px;
+    margin-left: auto;
     font-weight: bold;
 }
 
@@ -156,9 +192,11 @@ body {
 #chat-header {
     padding: 16px 20px;
     border-bottom: 1px solid #dbdbdb;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     flex-shrink: 0;
     z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 #chat-header .chat-username {
@@ -182,6 +220,7 @@ body {
     border-radius: 22px;
     font-size: 14px;
     line-height: 1.4;
+    animation: slideIn 0.3s ease;
 }
 
 .message.sent {
@@ -222,10 +261,14 @@ body {
     border-radius: 22px;
     font-size: 14px;
     outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .message-input input:focus {
     border-color: #0095f6;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .message-input button {
@@ -254,20 +297,22 @@ body {
 }
 
 .messages::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 
 .messages::-webkit-scrollbar-track {
-    background: #fafafa;
+    background: #f1f1f1;
+    border-radius: 4px;
 }
 
 .messages::-webkit-scrollbar-thumb {
-    background: #c7c7c7;
-    border-radius: 3px;
+    background: #888;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
 
 .messages::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+    background: #555;
 }
 
 /* Thêm styles cho phần gửi file và hiển thị tiến trình */
@@ -350,6 +395,12 @@ body {
     margin-bottom: 8px;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.file-preview:hover {
+    transform: translateY(-2px);
 }
 
 .image-preview {
@@ -380,4 +431,238 @@ body {
     font-size: 12px;
     color: #65676b;
     text-transform: uppercase;
-} 
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.separator span {
+    padding: 0 10px;
+    color: #8e8e8e;
+    font-size: 13px;
+}
+
+.g_id_signin {
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+.g_id_signin > div {
+    width: 100% !important;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #0081d6;
+}
+
+/* Cải thiện giao diện chat */
+.message {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.message.sent {
+    transform: translateX(10px);
+}
+
+.message.received {
+    transform: translateX(-10px);
+}
+
+.message:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* Thêm avatar người dùng trong khu vực chat */
+.message .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.message.sent .user-avatar {
+    order: 2;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Thêm thông báo tin nhắn mới */
+.unread-badge {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Thêm styles cho icon */
+h2 i, h3 i, .no-chat-selected i {
+    margin-right: 8px;
+    color: #0095f6;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+/* 1. Thêm animation cho tin nhắn mới */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    animation: slideIn 0.3s ease;
+}
+
+/* 3. Thêm loading indicator cho tin nhắn đang gửi */
+.message.sending::after {
+    content: '...';
+    animation: loadingDots 1s infinite;
+}
+
+@keyframes loadingDots {
+    0% { content: '.'; }
+    33% { content: '..'; }
+    66% { content: '...'; }
+}
+
+/* 7. Thêm typing indicator */
+.typing-indicator {
+    padding: 8px;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+/* 9. Responsive design cho mobile */
+@media (max-width: 768px) {
+    #chat-screen {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        max-height: 30vh;
+    }
+    
+    .chat-area {
+        height: 70vh;
+    }
+}
+
+/* 10. Thêm theme support */
+:root {
+    --primary-color: #0095f6;
+    --secondary-color: #f0f2f5;
+    --text-color: #262626;
+    --border-color: #dbdbdb;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #1a91da;
+        --secondary-color: #1e2732;
+        --text-color: #ffffff;
+        --border-color: #38444d;
+    }
+    
+    body {
+        background-color: #15202b;
+        color: var(--text-color);
+    }
+    
+    .message.received {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+}
+
+/* Styles cho user profile và nút đăng xuất */
+.user-profile {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-info .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-info span {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.logout-btn i {
+    font-size: 16px;
+}

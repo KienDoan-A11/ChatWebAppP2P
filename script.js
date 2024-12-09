@@ -10,6 +10,11 @@ let unreadMessages = {};
 const CHUNK_SIZE = 64 * 1024; // 64KB mỗi chunk
 let fileChunks = {}; // Lưu trữ chunks khi nhận file
 let sendingFiles = {}; // Theo dõi tiến trình gửi file
+let currentUserData = {
+    username: '',
+    avatar: '',
+    isGoogleUser: false
+};
 
 function initializeSocket() {
     // Kết nối tới signaling server
@@ -44,6 +49,16 @@ function login() {
     const username = document.getElementById('username').value;
     if (!username) return alert('Vui lòng nhập tên!');
     
+    currentUserData = {
+        username: username,
+        avatar: 'https://ui-avatars.com/api/?name=' + encodeURIComponent(username) + '&background=random',
+        isGoogleUser: false
+    };
+    
+    // Cập nhật thông tin hiển thị
+    document.getElementById('current-user-name').textContent = username;
+    document.getElementById('current-user-avatar').src = currentUserData.avatar;
+    
     currentUsername = username;
     console.log('Đang kết nối với username:', username);
     
@@ -69,7 +84,10 @@ function login() {
         // Thông báo cho signaling server
         socket.emit('user-login', {
             username: currentUsername,
-            peerId: id
+            peerId: id,
+            email: currentUserData.email,
+            picture: currentUserData.avatar,
+            isGoogleUser: currentUserData.isGoogleUser
         });
     });
     
@@ -167,24 +185,38 @@ function addUserToList(user) {
     userElement.className = 'online-user';
     userElement.setAttribute('data-peer-id', user.peerId);
     
-    // Thêm chấm xanh
+    // Tạo avatar container
+    const avatarContainer = document.createElement('div');
+    avatarContainer.className = 'user-avatar';
+    
+    // Tạo và thêm ảnh avatar
+    const avatarImg = document.createElement('img');
+    avatarImg.src = user.picture || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.username)}&background=random`;
+    avatarImg.alt = user.username;
+    avatarContainer.appendChild(avatarImg);
+    
+    // Thêm chấm trạng thái online
     const statusDot = document.createElement('span');
     statusDot.className = 'online-status';
-    userElement.appendChild(statusDot);
+    avatarContainer.appendChild(statusDot);
     
     // Thêm tên người dùng
     const usernameSpan = document.createElement('span');
     usernameSpan.className = 'username';
     usernameSpan.textContent = user.username;
-    userElement.appendChild(usernameSpan);
     
     // Thêm badge nếu có tin nhắn chưa đọc
+    let badge = null;
     if (unreadMessages[user.peerId] && unreadMessages[user.peerId] > 0) {
-        const badge = document.createElement('span');
+        badge = document.createElement('span');
         badge.className = 'unread-badge';
         badge.textContent = unreadMessages[user.peerId];
-        userElement.appendChild(badge);
     }
+    
+    // Ghép các phần tử lại
+    userElement.appendChild(avatarContainer);
+    userElement.appendChild(usernameSpan);
+    if (badge) userElement.appendChild(badge);
     
     userElement.onclick = () => connectToUser(user.peerId, user.username);
     onlineUsersDiv.appendChild(userElement);
@@ -402,7 +434,7 @@ async function handleFileSelect(peerId) {
     fileInput.value = ''; // Reset input
 }
 
-// Hàm chia và gửi file
+// Hàm chia và g���i file
 async function sendFileInChunks(file, peerId, fileId) {
     const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
     const conn = connections[peerId];
@@ -683,3 +715,149 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 }); 
+
+// Thêm hàm xử lý đăng nhập Google
+async function handleGoogleLogin(response) {
+    try {
+        const token = response.credential;
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+
+        const { name, email, picture } = JSON.parse(jsonPayload);
+        
+        // Cập nhật thông tin người dùng
+        currentUserData = {
+            username: name,
+            avatar: picture,
+            isGoogleUser: true
+        };
+        
+        // Tạo username không dấu và thay thế khoảng trắng bằng gạch dưới
+        currentUsername = name;
+        const sanitizedUsername = name
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')  // Loại bỏ dấu
+            .replace(/\s+/g, '_')             // Thay khoảng trắng bằng gạch dưới
+            .replace(/[^a-zA-Z0-9_]/g, '')    // Chỉ giữ lại chữ cái, số và gạch dưới
+            .toLowerCase();                    // Chuyển về chữ thường
+        
+        // Khởi tạo PeerJS với ID đã được xử lý
+        peer = new Peer(`${sanitizedUsername}_${Date.now()}`, {
+            host: '0.peerjs.com',
+            port: 443,
+            secure: true,
+            debug: 2,
+            config: {
+                'iceServers': [
+                    { urls: 'stun:stun.l.google.com:19302' },
+                    { urls: 'stun:stun1.l.google.com:19302' }
+                ]
+            }
+        });
+        
+        // Phần còn lại giữ nguyên
+        peer.on('open', (id) => {
+            console.log('Kết nối thành công với ID:', id);
+            document.getElementById('login-screen').style.display = 'none';
+            document.getElementById('chat-screen').style.display = 'flex';
+            
+            socket.emit('user-login', {
+                username: currentUsername,
+                peerId: id,
+                email: email,
+                picture: picture,
+                isGoogleUser: true
+            });
+        });
+        
+        peer.on('connection', handleNewConnection);
+        
+        peer.on('error', (err) => {
+            console.error('Lỗi PeerJS:', err);
+            if (err.type !== 'peer-unavailable') {
+                alert('Có lỗi xảy ra: ' + err.message);
+            }
+        });
+
+        initializeSocket();
+        
+        // Cập nhật thông tin hiển thị
+        document.getElementById('current-user-name').textContent = name;
+        document.getElementById('current-user-avatar').src = picture;
+        
+    } catch (error) {
+        console.error('Lỗi khi xử lý đăng nhập Google:', error);
+        alert('Có lỗi xảy ra khi đăng nhập bằng Google. Vui lòng thử lại.');
+    }
+} 
+
+// Thêm typing indicator
+function showTypingIndicator(peerId) {
+    const messagesDiv = document.getElementById(`messages-${peerId}`);
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'typing-indicator';
+    typingDiv.textContent = 'Đang nhập tin nhắn...';
+    messagesDiv.appendChild(typingDiv);
+}
+
+// Thêm loading state cho tin nhắn
+function sendMessageWithLoading(peerId, message) {
+    const messageElement = displayMessage(peerId, message);
+    messageElement.classList.add('sending');
+    
+    // Sau khi gửi thành công
+    setTimeout(() => {
+        messageElement.classList.remove('sending');
+    }, 1000);
+} 
+
+// Thêm hàm logout
+function logout() {
+    // Hiển thị confirm dialog
+    if (!confirm('Bạn có chắc muốn đăng xuất?')) return;
+    
+    // Đóng kết nối socket
+    if (socket) {
+        socket.disconnect();
+    }
+    
+    // Đóng kết nối peer
+    if (peer) {
+        peer.destroy();
+    }
+    
+    // Xóa tất cả kết nối hiện tại
+    connections = {};
+    
+    // Reset các biến
+    currentUsername = null;
+    selectedUser = null;
+    activeChat = null;
+    chatContainers = {};
+    messageHistory = {};
+    unreadMessages = {};
+    
+    // Reset currentUserData
+    currentUserData = {
+        username: '',
+        avatar: '',
+        isGoogleUser: false
+    };
+    
+    // Xóa nội dung chat
+    document.getElementById('online-users').innerHTML = '';
+    document.getElementById('chat-containers').innerHTML = '';
+    
+    // Hiển thị màn hình đăng nhập
+    document.getElementById('chat-screen').style.display = 'none';
+    document.getElementById('login-screen').style.display = 'flex';
+    
+    // Reset form đăng nhập
+    document.getElementById('username').value = '';
+    
+    // Thông báo đăng xuất thành công
+    alert('Đăng xuất thành công!');
+} 
