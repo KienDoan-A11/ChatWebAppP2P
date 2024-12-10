@@ -434,7 +434,7 @@ async function handleFileSelect(peerId) {
     fileInput.value = ''; // Reset input
 }
 
-// Hàm chia và g���i file
+// Hàm chia và gửi file
 async function sendFileInChunks(file, peerId, fileId) {
     const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
     const conn = connections[peerId];
